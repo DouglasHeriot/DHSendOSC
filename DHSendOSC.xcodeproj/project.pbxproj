@@ -10,6 +10,16 @@
 		A58199B716AFDD9500325CF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A58199B616AFDD9500325CF3 /* Foundation.framework */; };
 		A58199BA16AFDD9500325CF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A58199B916AFDD9500325CF3 /* main.m */; };
 		A58199BE16AFDD9500325CF3 /* DHSendOSC.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = A58199BD16AFDD9500325CF3 /* DHSendOSC.1 */; };
+		A58199DD16AFDE3D00325CF3 /* F53OSCBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = A58199C716AFDE3D00325CF3 /* F53OSCBundle.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A58199DE16AFDE3D00325CF3 /* F53OSCClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A58199C916AFDE3D00325CF3 /* F53OSCClient.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A58199DF16AFDE3D00325CF3 /* F53OSCMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = A58199CC16AFDE3D00325CF3 /* F53OSCMessage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A58199E016AFDE3D00325CF3 /* F53OSCPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = A58199CE16AFDE3D00325CF3 /* F53OSCPacket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A58199E116AFDE3D00325CF3 /* F53OSCServer.m in Sources */ = {isa = PBXBuildFile; fileRef = A58199D016AFDE3D00325CF3 /* F53OSCServer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A58199E216AFDE3D00325CF3 /* F53OSCTimeTag.m in Sources */ = {isa = PBXBuildFile; fileRef = A58199D216AFDE3D00325CF3 /* F53OSCTimeTag.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A58199E316AFDE3D00325CF3 /* NSData+F53OSCBlob.m in Sources */ = {isa = PBXBuildFile; fileRef = A58199D516AFDE3D00325CF3 /* NSData+F53OSCBlob.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A58199E416AFDE3D00325CF3 /* NSDate+F53OSCTimeTag.m in Sources */ = {isa = PBXBuildFile; fileRef = A58199D716AFDE3D00325CF3 /* NSDate+F53OSCTimeTag.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A58199E516AFDE3D00325CF3 /* NSNumber+F53OSCNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = A58199D916AFDE3D00325CF3 /* NSNumber+F53OSCNumber.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A58199E616AFDE3D00325CF3 /* NSString+F53OSCString.m in Sources */ = {isa = PBXBuildFile; fileRef = A58199DB16AFDE3D00325CF3 /* NSString+F53OSCString.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +41,30 @@
 		A58199B916AFDD9500325CF3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A58199BC16AFDD9500325CF3 /* DHSendOSC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DHSendOSC-Prefix.pch"; sourceTree = "<group>"; };
 		A58199BD16AFDD9500325CF3 /* DHSendOSC.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = DHSendOSC.1; sourceTree = "<group>"; };
+		A58199C516AFDE3D00325CF3 /* F53OSC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSC.h; sourceTree = "<group>"; };
+		A58199C616AFDE3D00325CF3 /* F53OSCBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCBundle.h; sourceTree = "<group>"; };
+		A58199C716AFDE3D00325CF3 /* F53OSCBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCBundle.m; sourceTree = "<group>"; };
+		A58199C816AFDE3D00325CF3 /* F53OSCClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCClient.h; sourceTree = "<group>"; };
+		A58199C916AFDE3D00325CF3 /* F53OSCClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCClient.m; sourceTree = "<group>"; };
+		A58199CA16AFDE3D00325CF3 /* F53OSCFoundationAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCFoundationAdditions.h; sourceTree = "<group>"; };
+		A58199CB16AFDE3D00325CF3 /* F53OSCMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCMessage.h; sourceTree = "<group>"; };
+		A58199CC16AFDE3D00325CF3 /* F53OSCMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCMessage.m; sourceTree = "<group>"; };
+		A58199CD16AFDE3D00325CF3 /* F53OSCPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCPacket.h; sourceTree = "<group>"; };
+		A58199CE16AFDE3D00325CF3 /* F53OSCPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCPacket.m; sourceTree = "<group>"; };
+		A58199CF16AFDE3D00325CF3 /* F53OSCServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCServer.h; sourceTree = "<group>"; };
+		A58199D016AFDE3D00325CF3 /* F53OSCServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCServer.m; sourceTree = "<group>"; };
+		A58199D116AFDE3D00325CF3 /* F53OSCTimeTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCTimeTag.h; sourceTree = "<group>"; };
+		A58199D216AFDE3D00325CF3 /* F53OSCTimeTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCTimeTag.m; sourceTree = "<group>"; };
+		A58199D316AFDE3D00325CF3 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		A58199D416AFDE3D00325CF3 /* NSData+F53OSCBlob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+F53OSCBlob.h"; sourceTree = "<group>"; };
+		A58199D516AFDE3D00325CF3 /* NSData+F53OSCBlob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+F53OSCBlob.m"; sourceTree = "<group>"; };
+		A58199D616AFDE3D00325CF3 /* NSDate+F53OSCTimeTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+F53OSCTimeTag.h"; sourceTree = "<group>"; };
+		A58199D716AFDE3D00325CF3 /* NSDate+F53OSCTimeTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+F53OSCTimeTag.m"; sourceTree = "<group>"; };
+		A58199D816AFDE3D00325CF3 /* NSNumber+F53OSCNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+F53OSCNumber.h"; sourceTree = "<group>"; };
+		A58199D916AFDE3D00325CF3 /* NSNumber+F53OSCNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+F53OSCNumber.m"; sourceTree = "<group>"; };
+		A58199DA16AFDE3D00325CF3 /* NSString+F53OSCString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+F53OSCString.h"; sourceTree = "<group>"; };
+		A58199DB16AFDE3D00325CF3 /* NSString+F53OSCString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+F53OSCString.m"; sourceTree = "<group>"; };
+		A58199DC16AFDE3D00325CF3 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +85,7 @@
 				A58199B816AFDD9500325CF3 /* DHSendOSC */,
 				A58199B516AFDD9500325CF3 /* Frameworks */,
 				A58199B316AFDD9500325CF3 /* Products */,
+				A58199C416AFDE3D00325CF3 /* F53OSC */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +122,38 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		A58199C416AFDE3D00325CF3 /* F53OSC */ = {
+			isa = PBXGroup;
+			children = (
+				A58199C516AFDE3D00325CF3 /* F53OSC.h */,
+				A58199C616AFDE3D00325CF3 /* F53OSCBundle.h */,
+				A58199C716AFDE3D00325CF3 /* F53OSCBundle.m */,
+				A58199C816AFDE3D00325CF3 /* F53OSCClient.h */,
+				A58199C916AFDE3D00325CF3 /* F53OSCClient.m */,
+				A58199CA16AFDE3D00325CF3 /* F53OSCFoundationAdditions.h */,
+				A58199CB16AFDE3D00325CF3 /* F53OSCMessage.h */,
+				A58199CC16AFDE3D00325CF3 /* F53OSCMessage.m */,
+				A58199CD16AFDE3D00325CF3 /* F53OSCPacket.h */,
+				A58199CE16AFDE3D00325CF3 /* F53OSCPacket.m */,
+				A58199CF16AFDE3D00325CF3 /* F53OSCServer.h */,
+				A58199D016AFDE3D00325CF3 /* F53OSCServer.m */,
+				A58199D116AFDE3D00325CF3 /* F53OSCTimeTag.h */,
+				A58199D216AFDE3D00325CF3 /* F53OSCTimeTag.m */,
+				A58199D316AFDE3D00325CF3 /* LICENSE.txt */,
+				A58199D416AFDE3D00325CF3 /* NSData+F53OSCBlob.h */,
+				A58199D516AFDE3D00325CF3 /* NSData+F53OSCBlob.m */,
+				A58199D616AFDE3D00325CF3 /* NSDate+F53OSCTimeTag.h */,
+				A58199D716AFDE3D00325CF3 /* NSDate+F53OSCTimeTag.m */,
+				A58199D816AFDE3D00325CF3 /* NSNumber+F53OSCNumber.h */,
+				A58199D916AFDE3D00325CF3 /* NSNumber+F53OSCNumber.m */,
+				A58199DA16AFDE3D00325CF3 /* NSString+F53OSCString.h */,
+				A58199DB16AFDE3D00325CF3 /* NSString+F53OSCString.m */,
+				A58199DC16AFDE3D00325CF3 /* README.markdown */,
+			);
+			path = F53OSC;
+			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 /* End PBXGroup section */
 
@@ -140,6 +207,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				A58199BA16AFDD9500325CF3 /* main.m in Sources */,
+				A58199DD16AFDE3D00325CF3 /* F53OSCBundle.m in Sources */,
+				A58199DE16AFDE3D00325CF3 /* F53OSCClient.m in Sources */,
+				A58199DF16AFDE3D00325CF3 /* F53OSCMessage.m in Sources */,
+				A58199E016AFDE3D00325CF3 /* F53OSCPacket.m in Sources */,
+				A58199E116AFDE3D00325CF3 /* F53OSCServer.m in Sources */,
+				A58199E216AFDE3D00325CF3 /* F53OSCTimeTag.m in Sources */,
+				A58199E316AFDE3D00325CF3 /* NSData+F53OSCBlob.m in Sources */,
+				A58199E416AFDE3D00325CF3 /* NSDate+F53OSCTimeTag.m in Sources */,
+				A58199E516AFDE3D00325CF3 /* NSNumber+F53OSCNumber.m in Sources */,
+				A58199E616AFDE3D00325CF3 /* NSString+F53OSCString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
