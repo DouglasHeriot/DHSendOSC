@@ -23,17 +23,64 @@ enum OPTION
 void printVersion(void);
 void printHelp(void);
 
-int main(int argc, const char * argv[])
+int main(int argc, char * const * argv)
 {
 	@autoreleasepool
 	{
 		F53OSCClient *client = [F53OSCClient new];
 		
+		
+		static struct option longOoptions[] = {
+			{"version",			no_argument,		NULL,	O_VERSION},
+			{"help",			no_argument,		NULL,	O_HELP},
+			
+			{"port",			required_argument,	NULL,	'p'},
+			{"server",			required_argument,	NULL,	's'},
+		};
+		const char shortOptions[] = {
+			O_VERSION, O_HELP,
+			O_SERVER, ':', O_PORT, ':',
+			'\0'};
+		
+		int ch;
+		while((ch = getopt_long(argc, argv, shortOptions, longOoptions, NULL)) != -1)
+		{
+			switch ((enum OPTION)ch)
+			{
+				case O_VERSION:
+					printVersion();
+					exit(0);
+					break;
+					
+				case O_HELP:
+					printVersion();
+					printHelp();
+					exit(0);
+					break;
+					
+				case O_PORT:
+					client.port = atoi(optarg);
+					break;
+					
+				case O_SERVER:
+					client.URL = [NSString stringWithUTF8String:optarg];
+					break;
+			}
+		}
+		
+		argc -= optind;
+		argv += optind;
+		
+		
+		
+		// Put back argv together as one string
+		// so that F53OSCMessage can parse it back out, with correct types
+		
 		NSMutableString *commandString = [NSMutableString string];
 		
-		for(NSUInteger i = 1; i < argc; ++i)
+		for(NSUInteger i = 0; i < argc; ++i)
 		{
-			if(i != 1)
+			if(i != 0)
 				[commandString appendString:@" "];
 			
 			NSString *currentArg = [NSString stringWithUTF8String:argv[i]];
@@ -47,6 +94,13 @@ int main(int argc, const char * argv[])
 		}
 		
 		F53OSCMessage *message = [F53OSCMessage messageWithString:commandString];
+		
+		if(!message)
+		{
+			fprintf(stderr, "Invalid OSC message.\n");
+			return 1;
+		}
+		
 		[client sendPacket:message];
 	}
     return 0;
@@ -63,6 +117,9 @@ void printHelp(void)
 	printf("\n"
 		   "Usage:	DHSendOSC -c server -p port address [arguments]\n\n"
 		   "Options:\n"
+		   "	--server, -s                Set IP of server to send UDP packets to\n"
+		   "    --port, -p                  Set UDP port\n"
+		   "\n"
 		   "	--version, -V               Displays version\n"
 		   "	--help, -h                  Displays this help\n"
 		   "\n");
