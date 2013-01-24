@@ -65,6 +65,8 @@
 		A58199DA16AFDE3D00325CF3 /* NSString+F53OSCString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+F53OSCString.h"; sourceTree = "<group>"; };
 		A58199DB16AFDE3D00325CF3 /* NSString+F53OSCString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+F53OSCString.m"; sourceTree = "<group>"; };
 		A58199DC16AFDE3D00325CF3 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
+		A58199F316B0B92300325CF3 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.md; sourceTree = SOURCE_ROOT; };
+		A58199F416B0B92300325CF3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,8 @@
 			children = (
 				A58199B916AFDD9500325CF3 /* main.m */,
 				A58199BD16AFDD9500325CF3 /* DHSendOSC.1 */,
+				A58199F316B0B92300325CF3 /* LICENSE.md */,
+				A58199F416B0B92300325CF3 /* README.md */,
 				A58199BB16AFDD9500325CF3 /* Supporting Files */,
 			);
 			path = DHSendOSC;
